@@ -3,6 +3,19 @@ const fs = require('fs');
  
 const server = http.createServer((req, res)=>{
 console.log(req.url, req.method);
+
+//testando lodash
+const numero = _.random(0, 50);
+console.log(numero);
+
+const saudacao = _.once(() => {
+console.log('boas vindas ao nosso site');
+});
+
+saudacao();
+
+
+
  
 // //definindo o tipo de conteúdo do cabeçalho
 // res.setHeader('Tipo-Conteudo', 'texto/simples');
